@@ -39,13 +39,27 @@ GType viewer_file_get_type (void)
   static volatile GType type = 0;
   if (g_once_init_enter(&type))
   {
-    GType ltype = g_type_register_static_simple (G_TYPE_OBJECT,
+    const GTypeInfo info = {
+      sizeof(ViewerFileClass),
+      NULL, /* base_init   : see this for purpose: https://api.gtkd.org/gobject.c.types.GClassInitFunc.html */
+      NULL, /* base_finalize */
+      viewer_file_class_init,
+      NULL, /* class finalizer */
+      NULL, /* class data */
+      sizeof(ViewerFile),
+      0,     /* n_preallocs */
+      viewer_file_init
+    };
+
+    GType ltype = g_type_register_static(G_TYPE_OBJECT, "ViewerFile", &info, 0);
+ 
+    /* GType ltype = g_type_register_static_simple (G_TYPE_OBJECT,
                                                  "ViewerFile",
                                                  sizeof(ViewerFileClass),
                                                  viewer_file_class_init,
                                                  sizeof(ViewerFile),
                                                  viewer_file_init,
-                                                 0);
+                                                 0); */
     g_once_init_leave(&type, ltype);
   }
   return type;
