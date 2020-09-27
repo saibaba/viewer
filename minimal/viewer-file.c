@@ -58,9 +58,10 @@ ViewerFile *viewer_file_new(void)
 
 static void viewer_file_class_init(ViewerFileClass *klass)
 {
-
+  g_print("viewer_file_class_init called\n");
 }
 
 static void viewer_file_init(ViewerFile *self)
 {
+  g_print("viewer_file_init called\n");
 }
