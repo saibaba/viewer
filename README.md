@@ -1,6 +1,6 @@
 # viewer
 
-Following are implemented:
+Following are implemented.
 
 naive
 -----
