@@ -1,21 +1,31 @@
 This example shows the bare minimum required to create a class using convenience macros: class init, inst init, inst structure.
 
 Wanted to see what the macros expand to? Use this command:
+
+```
 % gcc -E  viewer-file.c `pkg-config --cflags glib-2.0 gobject-2.0`
+```
 
 Two ways to comile and run
 --------------------------
 
-(1) Bare:
+Without any tool
+===
 
+```
 # compile:
 % gcc viewer-file.c main.c `pkg-config --cflags --libs glib-2.0 gobject-2.0`  -o viewer-file
 % run: you know
+```
 
-(2) Meson
+With Meson
+====
 
+```
 # compile and run:
 % rm -rf build && meson build && cd build && meson test
+```
+
 
 Ref
 ---
