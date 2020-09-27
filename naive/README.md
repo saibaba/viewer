@@ -4,7 +4,7 @@ Introduction
 
 This example shows creating your own oo system using GType mechanism from GObject system. Nothing else from GObject is used.
 
-This is basically demoing for OO using just GType and create fundamental type than using GObject".
+This is basically demoing for OO using just GType and create fundamental type than using GObject.
 
 
 Two ways to comile and run

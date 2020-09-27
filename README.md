@@ -4,7 +4,7 @@ Following are implemented:
 
 naive
 -----
-A naive OO system using GType but nothing else from GObject - we essentially create a new fundamenbtal type than using GObject as base class and hence loose all of its power.
+A naive OO system using GType but nothing else from GObject - we essentially create a new fundamental type than using GObject as base class and hence loose all of its power.
 
 
 minimal
