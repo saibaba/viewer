@@ -1,3 +1,7 @@
+Introduction
+============
+
+
 This example shows the bare minimum required to create a class using convenience macros: class init, inst init, inst structure.
 
 Wanted to see what the macros expand to? Use this command:
@@ -7,10 +11,10 @@ Wanted to see what the macros expand to? Use this command:
 ```
 
 Two ways to comile and run
---------------------------
+===
 
 Without any tool
-===
+----------------
 
 ```
 # compile:
@@ -19,7 +23,7 @@ Without any tool
 ```
 
 With Meson
-====
+------
 
 ```
 # compile and run:
@@ -28,7 +32,7 @@ With Meson
 
 
 Ref
----
+====
 * https://developer.gnome.org/gobject/stable/gtype-conventions.html
 * https://en.wikibooks.org/wiki/C_Programming/GObject
 * https://code.woboq.org/gtk/include/glib-2.0/gobject/gtype.h.html to find precise declrations/definitions created by various macros
