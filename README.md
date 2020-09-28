@@ -15,3 +15,8 @@ verbose
 -----
 An implementation of Viewer that does not use built-in macros. Just opening the hood of GObject system a a little to understand it better.
 
+
+Ref
+---
+* https://developer.gnome.org/gobject/stable/chapter-gobject.html#gobject-instantiation
+* https://www.cs.rit.edu/~ats/books/ooc.pdf
